@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import Greet from './component/Greet';
+import Welcome from './component/Welcome';
+import Hello from './component/Hello';
+import Message from './component/Message';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+class App extends Component{
+  render(){
+    return (
+      <div className="App">
+        <Message></Message>
+        {/* <Greet name="amit" role="superman">
+          <input type="button" value="check me!!" />
+        </Greet>
+        <Greet name="Anu" role="Wonder Lady"></Greet>
+        <Welcome  name="amit" role="superman"/>
+        <Welcome  name="amit" role="superman"/>
+        <Hello></Hello> */}
+      </div>
   );
+  }
 }
 
 export default App;
