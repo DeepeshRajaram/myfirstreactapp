@@ -1,7 +1,4 @@
 import React, {Component} from 'react';
-import Greet from './component/Greet';
-import Welcome from './component/Welcome';
-import Hello from './component/Hello';
 import Message from './component/Message';
 
 class App extends Component{
